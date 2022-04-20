@@ -30,4 +30,4 @@ jobs:
       - name: Installing  surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge ./ bc_proj002.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+        run: surge ./git@github.com:Sajjad-Samo/bc-proj002.git bc_proj002.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
